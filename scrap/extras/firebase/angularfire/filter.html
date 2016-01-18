@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+    <script src=script.js></script>
+    <link rel="stylesheet" href="/resources/tutorial/css/example.css"/>
+  </head>
+
+<body>
+    
+<div ng-app="myApp">
+    
+    <div ng-controller="MainCtrl as ctrl">
+        
+        <h3>Todo List</h3>
+        <label>
+            <input type="checkbox" ng-model="ctrl.showAll">
+            Show Completed
+        <label>
+        
+        <ul ng-repeat="todo in ctrl.todos">
+            <li ng-if="ctrl.showCompleted(todo)">{{ todo.title }} - <input type="checkbox" ng-model="todo.completed" ng-change="ctrl.toggleCompleted(todo)"> </li>
+        </ul>
+            
+        
+    </div>
+    
+</div>
+
+
+</body>
+</html>

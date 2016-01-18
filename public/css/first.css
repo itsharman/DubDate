@@ -1,0 +1,39 @@
+#top
+{
+    font-family: "Times New Roman";
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#logo
+{
+    font-size: 500%;
+    text-shadow: 2px 2px rgb(64, 64, 64);
+    font-family: 'Times New Roman';
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: rgb(255,255,153);
+}
+
+html 
+{ 
+  background: url(/img/dubdatewalk.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

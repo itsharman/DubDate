@@ -1,0 +1,124 @@
+#bottom
+{
+    color: white;
+    text-shadow: 1px 1px rgb(64, 64, 64);
+}
+
+body
+{
+    margin: 0px;
+    text-align: center;
+}
+
+html 
+{ 
+    background: url(/img/dubdatebackgood.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo
+{
+    font-size: 500%;
+    text-shadow: 2px 2px rgb(64, 64, 64);
+    font-family: 'Times New Roman';
+}
+
+#all
+{
+    background: url(/img/dubdatebackgood.jpg) no-repeat center fixed;
+    background-size: cover;
+    padding: 2%;
+}
+
+#middle
+{
+    background-color: rgba(64, 64, 64, 0.7);
+    padding: 10px;
+    margin: 50px; 
+    color: white;
+    font-family: 'Arial';
+}
+
+#nav
+{
+    margin: 50px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#nav li {
+    /*float: center;*/
+    margin: auto;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#nav li a:hover {
+    background-color: #111;
+}
+
+input
+{
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+
+input:focus,
+
+.focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#logo a:hover
+{
+    text-decoration: none;
+    color: rgb(64,64, 64);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+#chat_buddy
+{
+    text-align: left;
+}
+
+#my_message
+{
+    text-align: right;
+}
+
+/*#content {*/
+/*margin: 0 auto;*/
+/*top: 50%; left: 50%;*/
+/*width:500px;*/
+/*padding: 10px 10px 10px 10px;*/
+/*background-color: #D1ECFF;*/
+/*position: absolute;*/
+/*border-radius: 10px;*/
+/*-webkit-border-radius: 10px;*/
+/*-moz-border-radius: 10px;*/
+/*text-align: center;*/
+/*}*/

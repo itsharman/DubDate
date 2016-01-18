@@ -1,0 +1,50 @@
+/**
+* Given a match_id and current user_id, returns messages
+*/
+function message_push($match_id, $id)
+{
+ $messages = CS50::query("SELECT * FROM messages WHERE match_id = ?", $match_id);
+ return 0;
+}
+    
+
+$_SESSION["temp_match"] is match_id.
+        $_SESSION["id"] is sender_id
+        $_POST["message"] is message.
+
+File is an image - image/png.The file Screen Shot 2015-11-06 at 2.37.59 AM.png has been uploaded.
+
+y$L.u.2n0X3dT3gLo8J.nSOeySBeOpNwK60x91ZpdKJcsA4WuXyDsE2
+$2y$10$vLXTvJ/zuUmn9YJ1w3L3V.aWlPhP2ZwHXljT/XHpg2U5SOnicNG.2 = 60 chars
+y$y63QyKcFbx8YxY2xs1niE.xXm3EkPw8HrmDQDqXiUYJFXgjvPEjAy
+
+webpage:
+https://ide50-dwp7.cs50.io
+
+GOALS:
+1:
+Allow users to log in and create basic profile (no picture included). Set up back end database to store this information. On index of page, allow users to view the profiles of other users and click yes or no. This then scrolls through a slide show of all the users profiles.
+
+2:
+Keep track of this "yes!" information in a (potentially separate) database. A mutual yes equals a match. Derive and keep track of these matches in maybe a third database.
+
+3:
+Allow users to enter a private chatroom with those they've matched to. On the update profile section, allow users to upload a profile picture as a couple. In the slide show, display these pictures along with the interests.
+
+https://ide50-dwp7.cs50.io/phpmyadmin/index.php?db=pset7&table=users&target=sql.php&token=d2f886231629f5c80ce6579237c5a690#PMAURL-0:index.php?db=pset7&table=users&server=1&target=sql.php&token=d2f886231629f5c80ce6579237c5a690
+
+scrap:
+        
+        // CS50::query("INSERT INTO proposals (user_id, proposee_id) values(?, ?)
+        //     WHERE ? NOT IN
+        //     (SELECT proposee_id FROM proposals WHERE user_id = ? AND proposee_id = ?)", 
+        //     $_SESSION["id"], $viewnum[0]["viewNum"], $viewnum[0]["viewNum"],
+        //     $_SESSION["id"], $viewnum[0]["viewNum"]);
+        
+        // CS50::query("IF NOT EXISTS (SELECT * FROM proposals WHERE user_id = ? 
+        // AND proposee_id = ?) INSERT INTO proposals (user_id, proposee_id) values(?, ?)", 
+        // $_SESSION["id"], $viewnum[0]["viewNum"], $_SESSION["id"], $viewnum[0]["viewNum"]);
+        
+        //CS50::query("UPDATE users SET viewNum = (viewNum + 1) % ? WHERE id = ?", $last[0]["MAX(id)"], $_SESSION["id"]);
+        
+         <link href="/css/styles.css" rel="stylesheet"/>
