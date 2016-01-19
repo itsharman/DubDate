@@ -19,6 +19,11 @@ html
     background-size: cover;
 }
 
+.non-login
+{
+    font-size: 20px;
+}
+
 #logo
 {
     font-size: 500%;
@@ -53,6 +58,7 @@ html
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: inline-block;
 }
 
 #nav li {
@@ -100,12 +106,12 @@ a
     text-shadow: 2px 2px rgb(255, 255, 255);
 }
 
-#chat_buddy
+.chat_buddy
 {
     text-align: left;
 }
 
-#my_message
+.my_message
 {
     text-align: right;
 }
